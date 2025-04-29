@@ -72,7 +72,7 @@ function descubrir() {
         }, 500);
       }
     } else {
-      // Son distintas: ocultarlas otra vez
+      // Son distintas, ocultarlas otra vez
       setTimeout(() => {
         primera.classList.remove("descubierta");
         segunda.classList.remove("descubierta");
