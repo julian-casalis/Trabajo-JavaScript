@@ -1,4 +1,4 @@
-# JUEGO DE LA MEMORIA
+#  JUEGO DE LA MEMORIA
 
 Este programa es un juego de memoria interactivo que permite al usuario poner a prueba su capacidad de memoria visual.
 
