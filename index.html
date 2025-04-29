@@ -16,10 +16,19 @@
     <link href="css/site.css" rel="stylesheet" />
     <link href="css/4.css" rel="stylesheet" />
   </head>
-
+  <h1 class="titulo" id="titulo">Juego de la Memoria</h1>
+ 
   <body>
     <main><div id="mesa" class="mesa"></div></main>
+ <div id="contador" style="text-align:center; font-size: 1.5rem; margin-bottom: 1rem;">
+    Turnos: <span id="turnos">0</span>
+  </div>
+  <div id="pantallaFinal" style="display: none; text-align: center;">
+    <p>¡Ganaste!</p>
+    <div id="festejo" style="font-size: 3rem; margin-top: 10px;">🎉🎊🎉</div>
 
+    <div id="emojiFallingContainer"></div>
+  </div>
     <script src="js/javascript.js"></script>
   </body>
 </html>
