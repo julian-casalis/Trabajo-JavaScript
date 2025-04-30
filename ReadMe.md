@@ -16,6 +16,9 @@ encontrar todos los pares de emojis iguales, utilizando su memoria para recordar
 5. Si los emojis son diferentes, las cartas se ocultarán nuevamente, recuerda memorizar sus posiciones para los próximos turnos.
 6. Repite el proceso hasta encontrar todas las parejas de emojis.
 
+### Para jugar ingresa a:
+https://github.com/julian-casalis/Trabajo-JavaScript.git
+
 
 
 ## Desarrollo del juego
