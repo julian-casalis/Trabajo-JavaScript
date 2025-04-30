@@ -48,7 +48,6 @@ function descubrir() {
 }
 
 reparteTarjetas();
-
 //declaramos variables 
 let turnos = 0;
 let primera = null;
@@ -61,7 +60,7 @@ function actualizarContador() {
 }
 
 //Funcionn de descubrir la cartas 
-//Dodne si una es correcta pero otra no, boltear ambas
+//Dodne si una es correcta pero otra no, voltear ambas
 //Donde si las dos con correctas que queden
 function descubrir() {
   if (esperando || this.classList.contains("descubierta")) return;
@@ -124,7 +123,7 @@ function mostrarPantallaFinal() {
   generarEmojisQueCaen();
 }
 
-//Funcio donde se generan los emojis aleatoriamente y luego se muestran
+//Funcion donde se generan los emojis aleatoriamente y luego se muestran
 function generarEmojisQueCaen() {
   const emojis = ["🎉", "🎊", "🥳", "🎈", "🎁","😎", "🍦", "🐸", "👽", "👾", "🤖", "👹"];
   const contenedor = document.getElementById("emojiFallingContainer");
