@@ -17,7 +17,7 @@ encontrar todos los pares de emojis iguales, utilizando su memoria para recordar
 6. Repite el proceso hasta encontrar todas las parejas de emojis.
 
 ### Para jugar ingresa a:
-https://github.com/julian-casalis/Trabajo-JavaScript.git
+https://julian-casalis.github.io/Trabajo-JavaScript/
 
 
 
