@@ -85,10 +85,14 @@ El programa fue desarrollado utilizando JavaScript, HTML y CSS.
 ```
 
 
-2. Incluimos un contador de turnos.
+2. Incluimos un contador de movimiento y temporizador.
 
 ```html
 
+        <div id="tiempo">
+    Tiempo: <span id="tiempoValor">0</span> segundos
+    </div>
+    
     <div id="contador" style="text-align:center; font-size: 1.5rem; margin-bottom: 1rem;">
         Turnos: <span id="turnos">0</span>
     </div>
@@ -96,6 +100,20 @@ El programa fue desarrollado utilizando JavaScript, HTML y CSS.
 
 ```javascript
 
+    // Temporizador
+    function iniciarTemporizador() {
+    
+    setTimeout(() => {
+        tiempo = 0;
+        clearInterval(intervaloTiempo);
+        intervaloTiempo = setInterval(() => {
+        tiempo++;
+        document.getElementById("tiempoValor").textContent = tiempo;
+        }, 1000);
+    }, 3000); 
+    }
+
+    // Contador movimientos
     let turnos = 0;
 
     function actualizarContador() {
@@ -105,9 +123,25 @@ El programa fue desarrollado utilizando JavaScript, HTML y CSS.
     actualizarContador();
 ```
 
+```css
+      #contador{
+    color: white;
+    text-align:center; 
+    font-size: 1.5rem;
+     margin-bottom: 1rem;
+  }
+  
+  #tiempo{
+    text-align:center;
+     font-size: 1.5rem; 
+     color: white;
+  }
+```
+
 3. Ajustamos aspectos para lograr simetría y orden de los elementos.
 
 ```css
+
     .titulo{
     text-align: center;
     margin-top: 5rem;
@@ -160,6 +194,7 @@ El programa fue desarrollado utilizando JavaScript, HTML y CSS.
     document.getElementById("mesa").style.display = "none";
     document.getElementById("titulo").style.display = "none";  
     document.getElementById("contador").style.display = "none";
+    
     // Mostrar la pantalla de victoria
     
     document.getElementById("pantallaFinal").style.display = "block";
@@ -242,21 +277,17 @@ El programa fue desarrollado utilizando JavaScript, HTML y CSS.
 
 1. Muestra de cartas.
 
-![alt text](<Juego 5.png>)
+![alt text](<Assets/Muestra cartas.png>)
 
 2. Inicio del juego.
 
-![alt text](<Juego 1-2.png>)
+![alt text](<Assets/Inicio juego.png>)
 
-3. Selección de cartas.
+3. Contador y temporizador.
 
-![alt text](<Juego 2.png>)
+![alt text](<Assets/Cont y temp.png>)
 
-4. Contador.
+4. Mensaje al ganar.
 
-![alt text](<Juego 3-1.png>)
-
-5. Mensaje al ganar.
-
-![alt text](<Juego 4.png>)
+![alt text](<Assets/Final juego.png>)
 
