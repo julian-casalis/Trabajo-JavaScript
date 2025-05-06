@@ -64,10 +64,20 @@ body {
     margin-bottom: -200px;
     color: white;
   }
+
   #contador{
     color: white;
+    text-align:center; 
+    font-size: 1.5rem;
+     margin-bottom: 1rem;
   }
-  #pantallaFinal {
+  
+  #tiempo{
+    text-align:center;
+     font-size: 1.5rem; 
+     color: white;
+  }
+  #pantallaFinal{
     position: fixed;
     top: 0;
     left: 0;
